@@ -1,0 +1,64 @@
+* {
+  background-size: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+flex-direction: column;
+
+
+  height: 100vh;
+}
+.box1{
+  height: 200px;
+  width: 1800px;
+
+  background-image:url(pic/way.jpg);
+
+  animation: way 3s   infinite;
+
+margin-top: 25px;
+}
+.box {
+  width: 100px;
+  height: 100px;
+
+  background-image: url(https://avatanplus.com/files/resources/mid/57c4547319315156d6e9e19f.png);
+  
+  border-radius: 500px;
+
+
+  animation-name:anim;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+
+
+@keyframes way {
+  0%{
+    transform : translateX(0) 
+  }
+ 
+  100%{
+    transform : translateX(-120px)
+  }
+  
+  }
+
+@keyframes anim {
+  0% {
+    transform : translateY(0);
+  }
+  50%{
+    transform: translateY(-25px);
+  }
+  100% {
+    transform: translateY(25px);
+  }
+}
+
